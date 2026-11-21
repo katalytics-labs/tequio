@@ -1,0 +1,13 @@
+{
+  "summary": "Explain the comparison of intended behavior, the detailed task and actual code/tests; distinguish implemented and outstanding scope.",
+  "deviations": [],
+  "reconciliation": [
+    {
+      "source": "plans/delivery.md",
+      "actual": ["src/example.py", "tests/test_example.py"],
+      "docs": ["docs/behavior.md"],
+      "disposition": "implemented",
+      "notes": "Describe the actual behavior and how the documentation matches it, with test/evidence references where useful."
+    }
+  ]
+}

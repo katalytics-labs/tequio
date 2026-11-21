@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "example-specialist",
+  "mode": "implementation",
+  "technologies": [
+    {
+      "name": "Chosen component",
+      "version": "Exact version or bounded compatible range",
+      "selection": "selected"
+    }
+  ],
+  "capabilities": [
+    "A bounded project outcome this skill helps deliver"
+  ],
+  "exclusions": [
+    "Adjacent work outside its remit"
+  ],
+  "triggers": [
+    "When this expertise is useful"
+  ],
+  "acceptance": [
+    "Observable behavior including failure/denied cases"
+  ],
+  "context": [
+    "analysis/requirements.md",
+    "plans/delivery.md"
+  ],
+  "sources": [
+    {
+      "url": "https://example.org/official-documentation",
+      "kind": "primary",
+      "accessed": "2026-11-09",
+      "locator": "Actual relevant API/contract section",
+      "artifact": "references/source-notes.md"
+    }
+  ],
+  "checks": [
+    [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ]
+  ],
+  "project_context": []
+}

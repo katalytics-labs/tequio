@@ -1,0 +1,39 @@
+{
+  "mode": "next-chunk",
+  "scope": "Explicit task IDs or approved milestone; required before backlog mode",
+  "tasks": [],
+  "integration_branch": null,
+  "allow_local_commits": false,
+  "allow_local_merges": false,
+  "allow_push": false,
+  "parallel_writers": 1,
+  "on_conflict": "inspect-and-resolve-within-scope-or-checkpoint-blocked",
+  "stop_conditions": [
+    "approved scope complete",
+    "unresolved acceptance or security finding",
+    "scope-changing decision needed",
+    "host or session limit",
+    "execution checkpoint reached or repeated verification/review without task closure: report progress and reconcile before extending"
+  ],
+  "note": "Host instructions, not a scheduler or budget/authorization enforcement. Checkpoints use elapsed wall time and CLI-published verifications, not token/billing telemetry; missing usage stays unknown.",
+  "execution_checkpoints": {
+    "version": 1,
+    "wall_minutes": 30,
+    "max_verifications_per_task": 3
+  },
+  "model_delegation": {
+    "version": 1,
+    "enabled": true,
+    "available_choices": [],
+    "routing_preferences": [],
+    "review_diversity": {
+      "basis": "different-model",
+      "correctness": "optional",
+      "security": "preferred"
+    },
+    "fallback": {
+      "unavailable_choice": "host-default",
+      "unmet_preferred_diversity": "record-and-continue"
+    }
+  }
+}

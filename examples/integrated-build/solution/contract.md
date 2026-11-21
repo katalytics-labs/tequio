@@ -1,0 +1,5 @@
+# Synthetic evidence ledger contract
+
+Records are mappings with id (nonempty string), place (nonempty string), status in open/in-progress/verified, and evidence (list of string filenames). Input validation is performed by these public helpers; reject malformed records with ValueError. Never mutate input. query.select_records(records, place=None, status=None) validates and returns a new list in original order filtered by exact place/status; unknown requested status raises ValueError. export.evidence_csv(records) validates and returns a CSV string with headers id,place,status,evidence; evidence names joined with semicolon, preserve row order and CSV quoting. Helpers are independent over the same immutable contract.
+
+CLI: python -m siteledger.cli INPUT_JSON [--place PLACE] [--status STATUS] outputs evidence CSV to stdout, returns zero. Invalid input/unknown status/invalid JSON/missing file emits concise message on stderr, returns 2 with no traceback and no stdout. Compose query+export rather than duplicate logic. No network/dependencies.

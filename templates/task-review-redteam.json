@@ -1,0 +1,11 @@
+{
+  "batch": "EXACT_BATCH_ID_FROM_PREPARE_TASKS",
+  "summary": "Describe the proposed batch challenged, plausible failure scenarios and security/workflow limits; do not invent independent assessment.",
+  "coverage": {
+    "failure-cases": "Challenge partial failure, interrupted work, malformed inputs and misleading success conditions.",
+    "security-classification": "Challenge every security assessment, relevant dependencies and final release candidate boundaries.",
+    "privacy-export": "Challenge data/secret exposure through logs, reports, build contexts, archives and candidate inventories.",
+    "workflow-traps": "Challenge every draft even beside a ready starter: sourced reasons, concrete resolution actions, routine-choice deferrals, missing prerequisites, downstream writes invalidating ancestors, review order and overbroad replans."
+  },
+  "findings": []
+}

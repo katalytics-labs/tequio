@@ -1,0 +1,60 @@
+[
+  {
+    "id": "T001",
+    "title": "Implement a bounded behavior",
+    "outcome": "Describe an observable complete result",
+    "scope": "Name behavior and integration boundaries",
+    "exclusions": "Name related work deliberately outside this task",
+    "sources": [
+      "briefs/brief.md",
+      "analysis/requirements.md",
+      "plans/delivery.md"
+    ],
+    "depends_on": [],
+    "reads": [
+      "docs"
+    ],
+    "writes": [
+      "src/example.py",
+      "tests/test_example.py",
+      "docs/behavior.md"
+    ],
+    "specialists": [],
+    "risk": "normal",
+    "stage": "ready",
+    "acceptance": [
+      "Describe expected successful and denied/failure behavior"
+    ],
+    "checks": [
+      [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ]
+    ],
+    "handoff": "Return changed paths, actual checks/evidence, contract updates and unresolved findings",
+    "documentation": {
+      "mode": "update",
+      "paths": [
+        "docs/behavior.md"
+      ],
+      "reason": "This task changes observable behavior and its supported contract must be documented alongside implementation."
+    },
+    "freshness": {
+      "mode": "global"
+    },
+    "security_assessment": {
+      "surfaces": [],
+      "reason": "Describe why this bounded behavior changes no security surface, or list the affected categories."
+    },
+    "capture": {
+      "version": 1,
+      "mode": "bounded-v1",
+      "max_bytes": 1048576
+    }
+  }
+]

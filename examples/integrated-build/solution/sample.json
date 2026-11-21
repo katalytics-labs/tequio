@@ -1,0 +1,18 @@
+[
+  {
+    "id": "L-1",
+    "place": "Kitchen",
+    "status": "open",
+    "evidence": [
+      "photo,1.jpg"
+    ]
+  },
+  {
+    "id": "L-2",
+    "place": "Roof",
+    "status": "verified",
+    "evidence": [
+      "roof.jpg"
+    ]
+  }
+]

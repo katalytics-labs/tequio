@@ -1,0 +1,36 @@
+{
+  "candidate_paths": [
+    "dist/candidate"
+  ],
+  "coverage": {
+    "candidate-inventory": {
+      "disposition": "reviewed",
+      "reason": "Replace with substantive observed evidence, findings and coverage limitations for this area.",
+      "evidence": [
+        "dist/candidate"
+      ]
+    },
+    "dependencies": {
+      "disposition": "reviewed",
+      "reason": "Replace with substantive observed evidence, findings and coverage limitations for this area.",
+      "evidence": [
+        "dist/candidate"
+      ]
+    },
+    "configuration": {
+      "disposition": "reviewed",
+      "reason": "Replace with substantive observed evidence, findings and coverage limitations for this area.",
+      "evidence": [
+        "dist/candidate"
+      ]
+    },
+    "privacy-export": {
+      "disposition": "reviewed",
+      "reason": "Replace with substantive observed evidence, findings and coverage limitations for this area.",
+      "evidence": [
+        "dist/candidate"
+      ]
+    }
+  },
+  "gaps": []
+}

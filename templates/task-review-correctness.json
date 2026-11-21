@@ -1,0 +1,12 @@
+{
+  "batch": "EXACT_BATCH_ID_FROM_PREPARE_TASKS",
+  "summary": "Describe the actual proposed batch inspected, concrete evidence, deficiencies and the limits of this task-design review.",
+  "coverage": {
+    "requirements": "Map the full requested scope to tasks and identify omissions or unsupported additions.",
+    "readiness": "Inspect every task and every sourced draft decision; finish routine agent-owned choices, preserve genuine unknowns, and distinguish specification readiness from dispatchability.",
+    "dependencies": "Check producer/consumer order and transitive prerequisites, including intentionally changed completed outputs.",
+    "ownership": "Check declared reads/writes, serialized shared resources and supported evidence evolution.",
+    "checks": "Check executable validation, failure cases, actual wiring and acceptance evidence rather than placeholders."
+  },
+  "findings": []
+}

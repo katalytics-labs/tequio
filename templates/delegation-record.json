@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "task": null,
+  "actor": null,
+  "work": null,
+  "requested_choice": null,
+  "observed": {
+    "provider": null,
+    "model": null,
+    "family": null,
+    "source": "unknown"
+  },
+  "diversity": {
+    "status": "unknown",
+    "reason": "Actual underlying model identity has not been observed."
+  },
+  "fallback": null,
+  "evidence_references": []
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "reviewer": "actual-reviewer-id",
+  "revision": "exact-registered-revision",
+  "exercise_sha256": "exact-factory-exercise-receipt-hash",
+  "fixture_snapshot": "exact-fixture-snapshot",
+  "coverage": ["Actual request, paths, commands and observed behavior checked against acceptance"],
+  "source_checks": ["Actual official version-specific source claims independently checked"],
+  "limitations": ["Bounded scope, untested cases and integration assumptions"],
+  "findings": []
+}

@@ -1,0 +1,24 @@
+# Task-authoring review
+
+The maintained [task-review contract](../skills/tequio-tasks/references/task-review.md) covers pre-import correctness and red-team reviews, source/content binding, author/reviewer separation, report freshness, readiness checks and migration limits. It is installed with the existing Tasks skill so projects remain standalone.
+
+Implementation: `src/tequio/task_review.py`; CLI commands `prepare-tasks`, `review-tasks`, `task-review-status`; import enforcement in `core.py`. Tests cover missing reviews, identities, findings, changed content/context, report tampering and CLI read-only status. These are local gates, not authenticated reviewer identity or semantic certification.
+
+New drafts require a sourced decision object with a finite category, substantive reason and resolution action. Preparation reports only counts and draft ID/category pairs. These structural checks apply to new proposals and pending reviewed records, not imported history. Actual reviewers must assess every draft and challenge routine agent-owned choices; metadata does not establish truth or authorization. See the maintained contract for the exact schema and migration.
+
+
+## Explicit bounded verification capture
+
+New task/release templates opt into `capture:{version:1,mode:"bounded-v1",max_bytes:1048576}`. Exact keys, integer version1 and byte limit1..16777216; booleans/unknown supplied fields are invalid even on new drafts. The budget is shared across both streams/all check attempts, never reset per check. Absence preserves legacy task/API/receipt/timeout behavior; imported history is not migrated. This is capture policy for reviewed task commands, not a global tool sandbox or automatic security classifier.
+
+Bounded mode concurrently drains nonblocking pipes in chunks at most64KiB. Exactly the budget followed by EOF completes; an additional byte terminates the owned group and aborts unattempted checks. Timeout/read failure likewise retains captured prefix and stops later checks. Human-readable UTF-8 replacement strings and base64 raw prefixes are stored privately. Budget bounds retained raw payload, not all task metadata/host memory. observed_bytes stops at terminal capture decision; subsequent cleanup bytes have separate accounting. No truncation may yield a full-evidence PASS, including a process that already exited zero.
+
+Bounded receipts use schema_version2 and include policy, retained/observed/cleanup byte accounting, capture state/completeness, planned/attempted/executed counts and ordered skipped indexes. Results contain attempts, original indexes, launched booleans, actual observed exit codes, previews and exact stream byte/base64 counts. Launch failure remains an attempted result with no child; ordinary failures do not stop subsequent checks. Limit/timeout/capture failure skips only never-attempted checks. Version-aware readers validate policy, lengths, counts, raw/preview consistency and outcome before trusting passed. Unknown/inconsistent versions are invalid; valid incomplete capture is failed. Acceptance still requires current source/input hashes, docs and actual required independent reviews.
+
+Only bounded summaries use schema_version2: existing top-level summary fields plus capture `{state,complete,max_bytes,retained_bytes,planned}`; checks is `{attempted,executed,passed,failed,skipped}`. attempted counts result entries, executed counts spawned children; passed+failed=attempted. New fixed codes capture-limit-exceeded/capture-failed join existing nonzero/timeout/launch/instability codes; first3diagnostics plus omission count remain. No raw/base64/argv/error prose is included. Legacy summaries remain version1 unchanged. Metadata is private operator data, not a public export.
+
+Bounded receipt readers/writers enforce `8*max_bytes+1048576` serialized bytes, including size checks before JSON/base64 decode. Oversize metadata or publication failure attaches no result; an older PASS cannot substitute. Successful complete verification exits0, published failure exits1 and infrastructure/uncertain cleanup exits2. Exact path/hash publication stays under the operation guard. No spooling, automatic retention/deletion, global rollout or specialist/Git-command capture change is included.
+
+## Revision review
+
+[Revision](revision.md) reuses author/correctness/redteam separation and report coverage with an explicit operation discriminator. Review the whole prospective graph, selected supersessions, explicit old/new consumer dependency vectors, completed historical impact and retained-branch claims, alongside new task readiness. Ordinary import approval cannot authorize revision. Changed proposal/context/report invalidates the prepared review binding. This pre-apply design review is separate from the new current implementation checks/docs and independent correctness/security reviews required for affected work.

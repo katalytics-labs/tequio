@@ -1,0 +1,28 @@
+__pycache__/
+*.py[cod]
+.venv/
+.tequio/
+.agents/
+.env
+.env.*
+!.env.example
+.DS_Store
+
+# BEGIN TEQUIO PRIVATE PATHS
+/.agents/skills/tequio-briefing/
+/.agents/skills/tequio-build/
+/.agents/skills/tequio-challenge/
+/.agents/skills/tequio-check/
+/.agents/skills/tequio-design/
+/.agents/skills/tequio-explore/
+/.agents/skills/tequio-handoff/
+/.agents/skills/tequio-inspect/
+/.agents/skills/tequio-learn/
+/.agents/skills/tequio-package/
+/.agents/skills/tequio-pickup/
+/.agents/skills/tequio-redirect/
+/.agents/skills/tequio-specialists/
+/.agents/skills/tequio-status/
+/.agents/skills/tequio-tasks/
+/.tequio/
+# END TEQUIO PRIVATE PATHS
