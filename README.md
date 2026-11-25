@@ -2,7 +2,7 @@
 
 **Give your coding agent a workflow—from rough idea to tested, reviewed implementation.**
 
-Tequio (teh-KEE-oh) helps you build software with your coding agent, keeping the brief, plan, tasks, checks and reviews connected as work moves across sessions. Your agent does the engineering. Tequio supplies reusable instructions and a local CLI that records the work and guards task transitions.
+Tequio (TEH-kyoh) helps you build software with your coding agent, keeping the brief, plan, tasks, checks and reviews connected as work moves across sessions. Your agent does the engineering. Tequio supplies reusable instructions and a local CLI that records the work and guards task transitions.
 
 Version 0.18.0. **Early release · MIT**
 
