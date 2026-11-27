@@ -4,7 +4,7 @@
 
 Tequio (TEH-kyoh) helps you build software with your coding agent, keeping the brief, plan, tasks, checks and reviews connected as work moves across sessions. Your agent does the engineering. Tequio supplies reusable instructions and a local CLI that records the work and guards task transitions.
 
-Version 0.18.0. **Early release · MIT**
+Version 0.19.0. **Early release · MIT** · [Release notes](docs/releases/0.19.0.md)
 
 A Katalytics Labs project, created and maintained by Victor Flores Terrazas.
 
@@ -157,3 +157,7 @@ python3 bin/tequio uninstall "/absolute/path/to/your-project"
 For a deterministic local demonstration, run `python3 examples/quickstart/run_demo.py` from the source copy. It runs real checks on pre-authored example code and intentionally stops pending independent review. It uses no model or API key; it is not evidence of agent reasoning or productivity. [Example details](examples/quickstart/README.md).
 
 [Contributing](CONTRIBUTING.md) · [MIT license](LICENSE)
+
+## Understand a decision
+
+Use `$tequio-explain` for an optional project-grounded interactive lesson. It prepares temporary output, then asks where to keep it (or reuses your explicitly named destination), including outside the repository. See [Explain artifacts](docs/explain-artifacts.md). `$tequio-learn` continues to codify demonstrated findings into maintained guidance; neither adds a required development phase.

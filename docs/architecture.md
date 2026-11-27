@@ -99,3 +99,11 @@ The Status skill composes a short outcome overview and, for substantial scope, a
 ## Current prerequisite evidence and recovery
 
 Dependency checks traverse effective prerequisites root-first and report the first causal incomplete/invalid/changed input, output or scoped-context result. Context-only snapshot diagnostics do not invent historical component diffs. Existing reviewed successors plus explicit unfinished-consumer rebind provide [history-preserving recovery](prerequisite-recovery.md); no completion reset, evidence alias or new lifecycle table is added. Revision context retains history/source hashes without treating completed specialist bindings as live work. Current dispatch and successor qualification remain conservative.
+
+## Proportionate test guidance
+
+Tasks, Build and Check link one [proportionate-testing reference](../skills/tequio-check/references/proportionate-testing.md): focused development feedback, risk/dependency-based final scope and maintenance triggered by relevant edits or observed friction. Existing task prose holds a short rationale where useful; no required audit, schema, selector or new skill is added. This is advisory agent guidance. CLI verification still executes declared commands, and freshness, documentation and independent-review guards are unchanged. Project/CI mandatory checks take precedence; imported contract changes require supported reviewed revision/replan rather than historical edits or receipt reuse.
+
+## Optional project-grounded explanations
+
+The optional Explain skill adds person-facing learning without a CLI phase, schema or runtime service. The seventeenth portable workflow skill carries a self-contained teaching shell/reference and bounded synthetic model; Learn/codify and the four development mappings stay unchanged. Preparation is temporary first, then an owner-selected verified copy inside or outside the project; no required workspace/controller or retained repository lesson. Local scripts drive educational state with static/reduced-motion alternatives, never application operations. Actual browser, teaching and delivery qualification has separate limits from deterministic structure/model tests. See [Explain artifacts](explain-artifacts.md).

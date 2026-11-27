@@ -1,8 +1,8 @@
 # Validation and limits
 
-## Current 0.18.0 qualification
+## Current 0.19.0 qualification
 
-Version 0.18.0 has 395 passing framework tests on macOS with CPython 3.14.5. The older multi-version results below are historical qualification, not a new test claim for this release. Three deterministic example runners and standalone snapshot installation are also exercised. Run from the source folder:
+Version 0.19.0 has 401 passing framework tests on macOS with CPython 3.14.5. The older multi-version results below are historical qualification, not a new test claim for this release. Three deterministic example runners and standalone snapshot installation are also exercised. Run from the source folder:
 
 ```sh
 python3 tools/build_bundle.py
@@ -12,7 +12,7 @@ python3 examples/existing-project/run_demo.py
 python3 examples/integrated-build/run_demo.py
 ```
 
-The current bundle records 65 runtime/skill/role/template/profile/licence payload paths. It contains sixteen workflow skills (including optional briefing preparation and routing control), four generic role profiles and a specialist factory; no prebuilt project/stack specialists ship. Test counts include inherited lifecycle cases exercised again under scoped policy, not wholly independent product scenarios.
+The current bundle records 69 runtime/skill/role/template/profile/licence payload paths. It contains seventeen workflow skills (including optional briefing preparation and routing control), four generic role profiles and a specialist factory; no prebuilt project/stack specialists ship. Test counts include inherited lifecycle cases exercised again under scoped policy, not wholly independent product scenarios.
 
 Coverage includes installation/upgrade/removal, current installer version metadata and MIT retention, source bundle integrity/collisions, dependency/resource/concurrent claims, global fallback and opt-in scoped freshness, recursive prerequisites, nested-symlink/reserved-path refusal, real command checks, docs/review gates, read-only proof with malformed/tampered/stale/history cases, guarded local verification/recovery/acceptance and ownership-independent heartbeat, checkpoint policy/scope/progress and damaged-state diagnostics, optional Git/non-Git paths, dirty/collision/partial-failure preservation, lane controller routing and actual branch/root/common-dir/index/worktree/operation health, orientation and project-owned specialist qualification/discovery.
 
@@ -135,3 +135,11 @@ Status guidance adds adaptive outcome overview and evidence-backed milestone doc
 Dependency refusal/status diagnostics identify the first causal stale prerequisite and distinguish changed inputs, owned outputs, scoped context or unavailable evidence. Context-only aggregate snapshots do not establish exact changed historical paths. Existing reviewed fresh successors and explicit unfinished-consumer dependency rebind provide supported recovery without rewriting completed history, reusing old receipts or introducing an evidence alias/lifecycle. Scoped revision retains historical sources/state while resolving live specialist bindings only for unfinished/new work; dispatch freshness remains enforced.
 
 Qualification covers395 framework tests and all three maintained examples on local macOS/CPython3.14.5,65 bundle payloads, and actual independent correctness/security review. Four added synthetic recovery tests cover transitive context drift and fresh reviewed successor recovery, immutable historical rows/receipts, failed output checks/subsequent drift, completed versus live specialist context and fail-closed unavailable diagnostics. Private project-specific recovery instructions do not ship in the distribution. No downstream project mutation, automatic recovery or task migration is included.
+
+## Proportionate testing guidance qualification
+
+The Tasks, Build and Check skills share one [testing reference](../skills/tequio-check/references/proportionate-testing.md). Qualification runs the existing framework suite and three example commands listed above; no policy-keyword tests or runtime selection changes are introduced. Relative links and bundle hashes are inspected. Private scenario-based wording review covers isolated and shared authentication/persistence/API changes, mandatory full suites, slow/flaky checks, obsolete/duplicate coverage, imported broad contracts and absence of observed overhead. Scenario review assesses instructions and their limits; deterministic checks cover distribution/contracts. Neither establishes measured agent compliance, speed or cost savings, or security certification. Actual independent correctness/security review remains necessary for acceptance.
+
+## Explain artifact qualification
+
+`tests/test_explain_artifacts.py` checks complete default/prefixed distribution, update/uninstall preservation of owner lessons, self-contained structure and the actual shipped finite routing model with an available Node runner. A missing runner fails required model evidence rather than silently skipping it. `tests/explain_artifact_probe.py --manifest <private-manifest>` checks bounded evidence paths/hashes and explicit observations/gaps, not the truth of observations. Qualification uses a generated synthetic project lesson and a different backend storyboard. Observed browser checks cover guided scenarios, overload/failure accounting, pause/replay, keyboard access, reduced motion, a 390px viewport, scriptless worked states, print reasoning and inert hostile excerpts; a native offline file-open check observes hidden-tab pausing. The integrated scene uses the same finite model as free controls. Actual independent teaching/correctness and security inspection, current required checks and documented gaps remain acceptance gates; passing model or structural tests cannot certify pedagogy, mastery or host compliance. Synthetic vault-style delivery/browser checks do not establish actual Obsidian desktop/mobile execution. See [Explain artifacts](explain-artifacts.md).

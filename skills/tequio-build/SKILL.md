@@ -45,6 +45,10 @@ For substantial reusable instructions, focused applicability/source-boundary fee
 
 Prefer targeted source/delta reads and concise worker handoffs. Wait on real process handles at meaningful intervals while remaining responsive to owner messages, leases and checkpoints; avoid repeatedly replaying unchanged logs. Unknown usage remains unknown. These practices remove coordination repetition, not verification or review obligations.
 
+## Proportionate testing
+
+Use nearest meaningful behaviour/dependency/failure-path checks while iterating, broadening for shared or uncertain boundaries. Final verification still runs every declared mandatory command with current docs and actual applicable independent review. See [proportionate testing](../tequio-check/references/proportionate-testing.md) for selection and bounded maintenance; imported check-contract changes require supported reviewed revision/replan, never historical edits.
+
 ## Bounded existing-project execution
 
 For a small fix, follow the same claim, verification, documentation and independent-review gates with focused inputs. Reproduce the reported failure before editing when feasible, then implement the smallest complete correction within owned resources. Run the regression and appropriate nearby/integration checks; report which actually ran and any baseline failures. Preserve unrelated behavior and existing architecture unless the source-linked task explicitly changes them.

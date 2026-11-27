@@ -37,6 +37,10 @@ Declare an explicit security assessment for each ready task and challenge its cl
 
 Run `prepare-tasks <workspace-task-array> --author <actual-author>` to obtain the exact batch ID. Give the actual candidate and relevant source context to separate correctness and red-team reviewers. Reports use `.tequio/templates/task-review-correctness.json` and `task-review-redteam.json`. Record each with `review-tasks <batch> --actor <actual-reviewer> --kind correctness|redteam --report <workspace-relative-json>`. Resolve findings and re-review changed batches before `import-tasks`. This is agent orchestration, not another owner approval loop; it does not authorize Build. Missing actual reviewers means retain the explicit review gap, not fabricated passing receipts.
 
+## Proportionate testing
+
+Plan focused development feedback and briefly justify final coverage by affected behaviour, dependencies/risk and project/CI rules using existing task prose. Full suites remain appropriate when required, cheap or impact is unclear; proportionality cannot waive mandatory checks. See [proportionate testing](../tequio-check/references/proportionate-testing.md) for selection and bounded maintenance; imported check-contract changes require supported reviewed revision/replan, never historical edits.
+
 ## Qualification surface and execution cost
 
 Before declaring a task bounded, inventory its distinct acceptance surfaces, dependencies, fixtures, failure controls and expensive external effects. A single title or short implementation does not make a task with many independent qualification surfaces a one-pass chunk. Prefer coherent executable workflow slices with meaningful integration ownership; preserve the complete agreed requirements and final integrated proof. Avoid both one sprawling qualification task and dozens of microtasks paying the full lifecycle for trivial edits. Explain any deliberately large slice and its intermediate checkpoints.

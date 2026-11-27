@@ -150,3 +150,7 @@ Modified owned files cause a refusal. Workspace evidence, unrelated files, proje
 ## If setup stops
 
 Ask the agent to name the exact missing requirement or conflict and one next action in plain language. Keep the existing state intact. Don’t bypass ownership, reset task history, turn a stale check into a PASS or install dependencies just to silence a refusal. [Operator guide](operator-guide.md) · [Evidence recovery](prerequisite-recovery.md) · [Compatibility](compatibility.md).
+
+## Learn about a project decision
+
+Ask `$tequio-explain` to explain this backend decision, load balancing or a bounded deployment topic. It creates a grounded offline interactive lesson, then asks where to keep it after temporary preparation. An explicitly supplied destination is reused. See [Explain artifacts](explain-artifacts.md) for delivery, browser and privacy limits. This optional lesson does not approve implementation or replace `$tequio-learn` codification.

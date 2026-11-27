@@ -22,6 +22,10 @@ New task/release templates declare `capture:{version:1,mode:bounded-v1,max_bytes
 
 Bounded receipts/summaries use version2 with attempted versus actually executed counts and explicit skipped checks. Failed launch is an attempt, not an executed child or skipped check. Inspect exact private receipt evidence on failure; raw/base64 output never belongs in compact delivery. Unknown cleanup requires actual handle inspection, not inferred process death. Capture policy does not grant command authorization or automatically classify every project task as security-sensitive.
 
+## Proportionate testing
+
+Focused feedback does not replace any mandatory final command, fresh evidence, current docs or actual applicable independent review. See [proportionate testing](references/proportionate-testing.md) for affected-behaviour coverage and bounded suite maintenance. Imported check-contract changes require supported reviewed revision/replan; never edit historical definitions or substitute old PASS.
+
 ## Cheap feedback and current proof
 
 Cheap faithful boundary checks should precede costly integration effects during development. Feedback is not a registered acceptance receipt; final verification still executes every declared mandatory check against a stable current candidate. Repeat expensive effects for changed surfaces, failures or a concrete current-proof need within authorization, rather than to chase unrelated notes. A material boundary/configuration correction requires current affected evidence. Rebound effective dependencies invalidate earlier checks/docs/reviews even with unchanged source bytes.
